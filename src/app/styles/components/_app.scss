@@ -1,0 +1,11 @@
+.app {
+	display: flex;
+	height: 100vh;
+
+	&__components {
+		width: calc(100% - 300px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
