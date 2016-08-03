@@ -1,1 +1,1 @@
-export const SET_SESSION_TOKEN = 'session/token.set';
+export const SET_LOGIN_SUCCESS = 'login/success.set';

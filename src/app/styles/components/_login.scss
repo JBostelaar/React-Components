@@ -1,0 +1,22 @@
+.login {
+	display: flex;
+	justify-content: center;
+
+	&__form {
+		width: 400px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 40px;
+		margin: 50px 0;
+	}
+
+	&__submit {
+		float: right;
+		background: #3498db;
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+		padding: 10px 20px;
+		outline: none;
+	}
+}

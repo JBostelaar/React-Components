@@ -1,1 +1,1 @@
-export session from 'app/reducers/session';
+export login from 'app/reducers/login';

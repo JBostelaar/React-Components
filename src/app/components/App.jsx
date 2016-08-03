@@ -1,22 +1,10 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router';
+import Login from 'app/components/Login';
 
-export function App({ sessionToken }) {
+export default function App() {
 	return (
 		<main>
-			{sessionToken}
-			<Link to="/login">Go to login</Link>
+			<Login />
 		</main>
 	);
 }
-
-App.propTypes = {
-	sessionToken: React.PropTypes.string,
-};
-
-const mapStateToProps = state => ({
-	sessionToken: state.session.token,
-});
-
-export default connect(mapStateToProps)(App);

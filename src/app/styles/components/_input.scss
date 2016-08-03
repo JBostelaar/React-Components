@@ -1,0 +1,30 @@
+.input-field {
+	margin-bottom: 10px;
+
+	input {
+		border-radius: 3px;
+		border: 1px solid #ccc;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		outline: none;
+	}
+
+	label {
+		font-size: 14px;
+		font-weight: 600;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	&__toggle {
+		font-size: 12px;
+		opacity: .7;
+	}
+
+	&.error {
+		input {
+			border: 1px solid red;
+		}
+	}
+}
