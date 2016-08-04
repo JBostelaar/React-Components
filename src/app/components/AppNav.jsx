@@ -1,25 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
+import getRoutes from 'app/utils/getRoutes';
 
 export default class App extends React.Component {
 	constructor() {
 		super();
 
 		this.state = {
-			pages: [
-				{
-					label: 'Login',
-					path: '/login',
-				},
-				{
-					label: 'Input Password',
-					path: '/password',
-				},
-				{
-					label: 'Input',
-					path: '/input',
-				},
-			],
+			pages: getRoutes()[0].childRoutes,
 		};
 	}
 

@@ -12,14 +12,17 @@ export default function getRoutes() {
 			childRoutes: [
 				{
 					path: '/login',
+					label: 'Login',
 					component: Login,
 				},
 				{
 					path: '/password',
+					label: 'Password',
 					component: InputPassword,
 				},
 				{
 					path: '/input',
+					label: 'Input',
 					component: Input,
 				},
 			],
