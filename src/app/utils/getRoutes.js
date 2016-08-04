@@ -3,6 +3,7 @@ import Login from 'app/components/Login';
 import Input from 'app/components/Input';
 import InputPassword from 'app/components/InputPassword';
 import TooltipContainer from 'app/components/TooltipContainer';
+import SearchContainer from 'app/components/SearchContainer';
 
 export default function getRoutes() {
 	return [
@@ -30,6 +31,11 @@ export default function getRoutes() {
 					path: '/tooltip',
 					label: 'Tooltip',
 					component: TooltipContainer,
+				},
+				{
+					path: '/search',
+					label: 'Search',
+					component: SearchContainer,
 				},
 			],
 		},
