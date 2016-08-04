@@ -1,7 +1,8 @@
 import App from 'app/components/App';
 import Login from 'app/components/Login';
-import InputPassword from 'app/components/InputPassword';
 import Input from 'app/components/Input';
+import InputPassword from 'app/components/InputPassword';
+import TooltipContainer from 'app/components/TooltipContainer';
 
 export default function getRoutes() {
 	return [
@@ -24,6 +25,11 @@ export default function getRoutes() {
 					path: '/input',
 					label: 'Input',
 					component: Input,
+				},
+				{
+					path: '/tooltip',
+					label: 'Tooltip',
+					component: TooltipContainer,
 				},
 			],
 		},
