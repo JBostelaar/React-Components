@@ -22,12 +22,26 @@
 			li {
 				border-bottom: 1px solid #ccc;
 				padding: 10px 20px;
+				cursor: pointer;
 
 				&:hover {
 					background: #3498db;
 					color: #fff;
 				}
 			}
+		}
+	}
+
+	&__clear {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 20px;
+		color: #aaa;
+		cursor: pointer;
+
+		&:hover {
+			color: #888;
 		}
 	}
 }

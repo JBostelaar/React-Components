@@ -5,8 +5,18 @@ export default class Search extends React.Component {
 	constructor() {
 		super();
 
-		this.state = { value: '', filteredData: null };
+		this.state = {
+			value: '',
+			filteredData: null,
+			openResults: false,
+		};
+
 		this.handleChange = this.handleChange.bind(this);
+		this.setValue = this.setValue.bind(this);
+	}
+
+	setValue(value) {
+		this.setState({ value, openResults: false });
 	}
 
 	handleChange(e) {
@@ -14,14 +24,16 @@ export default class Search extends React.Component {
 		this.setState({ value });
 
 		if (!value) return;
+
 		let filteredData = this.props.data.filter(name => (
-			name.toLowerCase().indexOf(value.toLowerCase()) !== -1
+			name.toLowerCase().indexOf(value.toLowerCase()) === 0
 		));
 
-		if (filteredData.length > 10) {
-			filteredData = filteredData.splice(0, 10);
+		if (filteredData.length > 5) {
+			filteredData = filteredData.splice(0, 5);
 		}
-		this.setState({ filteredData });
+
+		this.setState({ filteredData, openResults: true });
 	}
 
 	render() {
@@ -40,11 +52,18 @@ export default class Search extends React.Component {
 					placeholder="Search"
 				/>
 				{this.state.value ? (
+					<i className="material-icons input-search__clear" onClick={() => this.setValue('')}>
+						&#xE5C9;
+					</i>
+				) : ''}
+				{this.state.value && this.state.openResults ? (
 					<div className="input-search__results">
 						{this.state.filteredData.length ? (
 							<ul>
 								{this.state.filteredData.map((name, index) => (
-									<li key={index}>{name}</li>
+									<li key={index} onClick={() => this.setValue(name)}>
+										{name}
+									</li>
 								))}
 							</ul>
 						) : (
