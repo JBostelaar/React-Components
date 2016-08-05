@@ -41,7 +41,7 @@ export default class Tooltip extends React.Component {
 
 		return (
 			<div className={classes}>
-				<i className="tooltip__toggle" onClick={this.toggleTooltip}>i</i>
+				<i className="tooltip__toggle material-icons" onClick={this.toggleTooltip}>&#xE88E;</i>
 				{this.state.open || this.props.hover ? (
 					<div className="tooltip__content">
 						{text}

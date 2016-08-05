@@ -4,15 +4,6 @@
 
 	&__toggle {
 		cursor: pointer;
-		background: #2c3e50;
-		display: block;
-		border-radius: 100%;
-		width: 20px;
-		height: 20px;
-		line-height: 20px;
-		text-align: center;
-		color: #fff;
-		font-size: 12px;
 	}
 
 	&__content {
@@ -47,7 +38,7 @@
 
 	&--open {
 		.tooltip__toggle {
-			background: #3498db;
+			color: #3498db;
 		}
 	}
 
@@ -57,21 +48,11 @@
 		}
 
 		.tooltip__toggle:hover {
-			background: #3498db;
+			color: #3498db;
 
 			+ .tooltip__content {
 				display: block;
 			}
 		}
-
-		// &:hover {
-		// 	.tooltip__content {
-		// 		display: block;
-		// 	}
-		//
-		// 	.tooltip__toggle {
-		//
-		// 	}
-		// }
 	}
 }
