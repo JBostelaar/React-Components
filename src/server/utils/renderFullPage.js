@@ -6,7 +6,8 @@ export default function renderFullPage(html) {
 	<html>
 		<head>
 			<meta charset="utf-8">
-			<title>App</title>
+			<title>React Components</title>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 			<link rel="stylesheet" href="/style.css?v=${pkg.version}">
 		</head>
 		<body>
