@@ -2,6 +2,7 @@ import App from 'app/components/App';
 import Login from 'app/components/Login';
 import Input from 'app/components/Input';
 import InputPassword from 'app/components/InputPassword';
+import Toggle from 'app/components/Toggle';
 import TooltipContainer from 'app/components/TooltipContainer';
 import SearchContainer from 'app/components/SearchContainer';
 
@@ -37,6 +38,11 @@ export default function getRoutes() {
 					label: 'Search',
 					component: SearchContainer,
 				},
+				{
+					path: '/toggle',
+					label: 'Toggle',
+					component: Toggle,
+				}
 			],
 		},
 	];
