@@ -5,7 +5,7 @@ import randomNames from 'app/utils/randomNames';
 export default function SearchContainer() {
 	const names = randomNames();
 	return (
-		<div className="tooltip__container">
+		<div className="search__container">
 			<Search data={names} />
 		</div>
 	);
