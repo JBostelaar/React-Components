@@ -4,10 +4,27 @@
 
 	&__components {
 		width: calc(100% - 300px);
-		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		padding-top: 50px;
 		background: #f8f8f8;
+		position: relative;
+
+		.animation-container {
+			> div {
+				opacity: 1;
+				transition: all .3s ease;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 50px;
+			}
+
+			.componentsTransition-leave, .componentsTransition-enter {
+				opacity: 0;
+				top: 20px;
+			}
+
+			.componentsTransition-leave {
+				top: 80px;
+			}
+		}
 	}
 }
