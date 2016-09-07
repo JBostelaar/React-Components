@@ -1,7 +1,7 @@
 {
-  "name": "JS-Boilerplates",
+  "name": "React Components",
   "version": "0.1.0",
-  "description": "",
+  "description": "Collection of React Components",
   "author": "jornbostelaar",
   "license": "MIT",
   "dependencies": {
