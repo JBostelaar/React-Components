@@ -5,6 +5,7 @@ import InputPassword from 'app/components/InputPassword';
 import Toggle from 'app/components/Toggle';
 import TooltipContainer from 'app/components/TooltipContainer';
 import SearchContainer from 'app/components/SearchContainer';
+import Notifications from 'app/components/Notifications';
 
 export default function getRoutes() {
 	return [
@@ -42,7 +43,12 @@ export default function getRoutes() {
 					path: '/toggle',
 					label: 'Toggle',
 					component: Toggle,
-				}
+				},
+				{
+					path: '/notifications',
+					label: 'Notifications',
+					component: Notifications,
+				},
 			],
 		},
 	];
